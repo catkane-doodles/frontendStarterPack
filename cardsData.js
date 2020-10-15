@@ -2,6 +2,7 @@ let lorem =
   "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere facilis modi provident molestiae sapiente ducimus vero nulla eligendi eius, tempora, magni at velit consequatur exercitationem id vel architecto deserunt placeat!";
 let markup = {
   title: "Markup",
+  seen: false,
   cards: [
     {
       avatar: "https://image.flaticon.com/icons/png/512/1216/1216733.png",
@@ -15,6 +16,7 @@ let markup = {
 
 let scripting = {
   title: "Scripting",
+  seen: false,
   cards: [
     {
       avatar: "",
@@ -35,6 +37,7 @@ let scripting = {
 
 let styling = {
   title: "Styling",
+  seen: false,
   cards: [
     {
       avatar: "",
@@ -77,6 +80,7 @@ let styling = {
 
 let frameworks = {
   title: "Frameworks",
+  seen: false,
   cards: [
     {
       avatar: "",

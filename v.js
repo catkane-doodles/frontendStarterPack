@@ -1,6 +1,23 @@
-var categories = new Vue({
-  el: "#categories",
+var tabs = new Vue({
+  el: "#tabs",
   data: {
-    categories: [markup, scripting, styling, frameworks],
+    tabs: [markup, scripting, styling, frameworks],
   },
 });
+
+var details = new Vue({
+  el: "#details",
+  data: {
+    details: [markup, scripting, styling, frameworks],
+  },
+});
+
+function toggle(category, tabs) {
+  for (tab of tabs)
+    if (tab != category) {
+      tab.seen = false;
+      $("#" + tab.title).removeClass("is-active");
+    }
+  category.seen = true;
+  $("#" + category.title).addClass("is-active");
+}
