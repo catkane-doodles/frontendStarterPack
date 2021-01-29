@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
     />
+    <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.js"
@@ -17,51 +18,57 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <div class="section">
-        <div class="columns">
-          <div class="column has-text-centered">
-            <h1 class="title is-size-1">FrontEnd Starter Pack</h1>
-            <br />
+    <div id="main" class="has-background-warning-light">
+      <div class="container">
+        <div class="section">
+          <div class="columns">
+            <div class="column has-text-centered">
+              <h1 class="title is-size-1">FrontEnd Starter Pack</h1>
+              <br />
+            </div>
           </div>
-        </div>
-        <div class="tabs is-boxed is-centered is-large" id="tabs">
-          <ul>
-            <li v-for="category in tabs" :id="category.title">
-              <a @click="toggle(category, tabs)"
-                ><span>{{category.title}}</span></a
-              >
-            </li>
-          </ul>
-        </div>
-        <div id="details">
-          <div
-            class="row columns is-multiline"
-            v-if="category.seen"
-            v-for="category in details"
-          >
-            <div class="column is-3" v-for="card in category.cards">
-              <div class="card">
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-left">
-                      <figure class="image is-48x48">
-                        <img :src="card.avatar" alt="Image" />
-                      </figure>
-                    </div>
-                    <div class="media-content">
-                      <p>
-                        <span class="title is-4">
-                          <a :href="card.documentation">{{card.name}} </a>
-                        </span>
-                      </p>
-                      <p>{{card.subtitle}}</p>
-                    </div>
-                  </div>
-                  <div class="content">
-                    {{card.content}}
-                    <div class="background-icon">
-                      <span class="icon-twitter"></span>
+          <div class="tabs is-boxed is-centered is-large" id="tabs">
+            <ul>
+              <li v-for="category in tabs" :id="category.title">
+                <a @click="toggle(category, tabs)"
+                  ><span>{{category.title}}</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="details">
+            <div class="columns is-centered">
+              <div class="column is-9">
+                <div
+                  class="row columns is-multiline is-centered"
+                  v-if="category.seen"
+                  v-for="category in details"
+                >
+                  <div class="column is-4" v-for="card in category.cards">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="media">
+                          <div class="media-left">
+                            <figure class="image is-48x48">
+                              <img :src="card.avatar" alt="Image" />
+                            </figure>
+                          </div>
+                          <div class="media-content">
+                            <p>
+                              <span class="title is-4">
+                                <a :href="card.documentation">{{card.name}} </a>
+                              </span>
+                            </p>
+                            <p>{{card.subtitle}}</p>
+                          </div>
+                        </div>
+                        <div class="content">
+                          {{card.content}}
+                          <div class="background-icon">
+                            <span class="icon-twitter"></span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
