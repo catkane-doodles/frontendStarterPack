@@ -5,7 +5,7 @@ let markup = {
   seen: false,
   cards: [
     {
-      avatar: "https://image.flaticon.com/icons/png/512/1216/1216733.png",
+      avatar: "fab fa-html5 fa-4x",
       name: "HTML5",
       subtitle: "div div div div div div div",
       documentation: "#",
@@ -19,14 +19,14 @@ let scripting = {
   seen: false,
   cards: [
     {
-      avatar: "",
+      avatar: "fab fa-js fa-4x",
       name: "JavaScript",
       subtitle: "Script that sh*t",
       documentation: "#",
       content: lorem,
     },
     {
-      avatar: "",
+      avatar: "./assets/jquery.svg",
       name: "JQuery",
       subtitle: "Harder, but faster",
       documentation: "#",
@@ -40,14 +40,14 @@ let styling = {
   seen: false,
   cards: [
     {
-      avatar: "",
+      avatar: "fab fa-css3-alt fa-4x",
       name: "CSS",
       subtitle: "Make that sh*t pretty",
       documentation: "#",
       content: lorem,
     },
     {
-      avatar: "",
+      avatar: "fab fa-sass fa-3x",
       name: "SASS",
       subtitle: "Make that sh*t pretty",
       documentation: "#",
@@ -55,21 +55,21 @@ let styling = {
     },
 
     {
-      avatar: "",
+      avatar: "./assets/bulma.svg",
       name: "Bulma",
       subtitle: "Style that sh*t (easier)",
       documentation: "#",
       content: lorem,
     },
     {
-      avatar: "",
+      avatar: "fab fa-bootstrap fa-4x",
       name: "Bootstrap",
       subtitle: "Style that sh*t (standard)",
       documentation: "#",
       content: lorem,
     },
     {
-      avatar: "",
+      avatar: "./assets/materialize.svg",
       name: "Materialize",
       subtitle: "Style that sh*t (standard)",
       documentation: "#",
@@ -83,21 +83,21 @@ let frameworks = {
   seen: false,
   cards: [
     {
-      avatar: "",
+      avatar: "fab fa-vuejs fa-4x",
       name: "Vue.js",
       subtitle: "Link that sh*t",
       documentation: "#",
       content: lorem,
     },
     {
-      avatar: "",
+      avatar: "fab fa-react fa-4x",
       name: "REACT",
       subtitle: "Link that sh*t",
       documentation: "#",
       content: lorem,
     },
     {
-      avatar: "",
+      avatar: "fab fa-angular fa-4x",
       name: "Angular",
       subtitle: "Link that sh*t",
       documentation: "#",

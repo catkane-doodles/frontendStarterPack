@@ -10,6 +10,11 @@ var details = new Vue({
   data: {
     details: [markup, scripting, styling, frameworks],
   },
+  methods: {
+    inside: function(name) {
+      return ['Bulma', 'Materialize', 'JQuery'].includes(name)
+    }
+  }
 });
 
 function toggle(category, tabs) {
